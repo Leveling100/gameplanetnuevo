@@ -1,0 +1,228 @@
+<head>
+    <title>Game Planet - Catálogo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(90deg in oklab, blue, red);
+            color: #333;
+        }
+        header {
+            background-color: #002244;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        header h1 {
+            font-size: 1.5em;
+        }
+        header p { 
+            margin-left: auto;
+        }
+        .banner {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 8px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            padding-top: 20px; 
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 10px 0;
+            color: #004e92;
+        }
+        .card p {
+            padding: 0 10px 10px;
+            font-size: 0.9em;
+        }
+        .more-btn {
+            background-color: green;
+            color: white;
+            padding: 8px 16px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; 
+        }
+        .more-btn:hover { 
+            background-color: #006400;
+        }
+
+        /* New button style */
+        .load-more-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .load-more-btn {
+            background-color: #004e92; 
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .load-more-btn:hover {
+            background-color: #003366;
+            transform: translateY(-2px);
+        }
+
+       
+        .card .more-link {
+            background-color: green;
+            color: white;
+            padding: 8px 16px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none; 
+            display: inline-block; 
+            transition: background-color 0.3s ease;
+        }
+        .card .more-link:hover {
+            background-color: #006400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="PLg.png" alt="Game Planet Logo">
+        <h1>Game Planet</h1>
+        <p>Tu mundo gamer, en un solo lugar</p>
+    </header>
+    <img src="loi.png" alt="Arcade Banner" class="banner">
+    
+
+
+    <h2>Nuestros Productos</h2>
+    <div class="products">
+        <div class="card">
+            <img src="mine.jpg" alt="Minecraft">
+            <h3>Minecraft</h3>
+            <p>Minecraft es un videojuego de mundo abierto donde los jugadores exploran, construyen y sobreviven en un mundo generado por bloques.</p>
+            <p>Más detalles aquí...</p>
+                    <a href="https://www.minecraft.net/es-es/article/what-minecraft" class="more-link">.MAS</a>
+            
+        </div>
+        <div class="card">
+            <img src="nba26" alt="NBA 2K26">
+            <h3>NBA 2K26</h3>
+            <p>La última entrega de la saga NBA 2K, con gráficos mejorados, nuevas funciones y disponible en múltiples plataformas.</p>
+              <p>Más detalles aquí...</p>
+                    <a href="https://nba.2k.com/2k26/" class="more-link">.MAS</a>
+        </div>
+        <div class="card">
+            <img src="for" alt="Fortnite">
+            <h3>Fortnite</h3>
+            <p>Un popular juego Battle Royale gratuito donde hasta 100 jugadores compiten para ser el último en pie.</p>
+              <p>Más detalles aquí...</p>
+                    <a href="https://www.fortnite.com/?lang=es-ES" class="more-link">.MAS</a>
+        </div>
+        <div class="card">
+            <img src="granturismo" alt="Gran Turismo 7">
+            <h3>Gran Turismo 7</h3>
+            <p>Para pilotos competitivos o casuales, con gran variedad de modos de juego, campañas y coleccionables.</p>
+            <p>Más detalles aquí...</p>
+                    <a href="https://www.playstation.com/es-mx/games/gran-turismo-7/" class="more-link">.MAS</a>
+        </div>
+    </div>
+     <div class="products">
+        <div class="card">
+            <img src="sonic.jpg" alt="Sonic Frontiers">
+            <h3>Sonic Frontiers</h3>
+            <p>Sonic Frontiers es un juego de plataformas y aventuras de mundo abierto en 3D, protagonizado por Sonic the Hedgehog. En él, Sonic explora las Islas Starfall, un mundo lleno de misterios y enemigos, mientras busca las Chaos Emeralds. El juego combina la velocidad característica de Sonic con la exploración de zonas abiertas y la resolución de puzzles, además de un nuevo sistema de combate. </p>
+             <p>Más detalles aquí...</p>
+                    <a href="https://store.steampowered.com/app/1237320/Sonic_Frontiers/" class="more-link">.MAS</a>
+        </div>
+        <div class="card">
+            <img src="cyber.jpg" alt="Cyberpunk 2077">
+            <h3>Cyberpunk 2077</h3>
+            <p>Cyberpunk 2077 es un RPG de acción y aventura en mundo abierto ambientado en Night City, una megalópolis distópica donde el poder, el glamour y las modificaciones corporales son la norma. En el juego, encarnas a V, un mercenario cyberpunk, y te embarcas en una búsqueda para encontrar un implante único que podría otorgar la inmortalidad. </p>
+            <a href="https://www.cyberpunk.net/us/es/" class="more-link">.MAS</a>
+        </div>
+        <div class="card">
+            <img src="roblox" alt="Roblox">
+            <h3>Roblox</h3>
+            <p>Roblox es una plataforma de juegos en línea donde los usuarios pueden crear y jugar juegos diseñados por otros jugadores. Es una plataforma social que permite a los usuarios interactuar, hacer amigos y explorar una gran variedad de experiencias. Básicamente, es una comunidad donde los usuarios crean contenido, principalmente juegos, para que otros jueguen. </p>
+      <p>Más detalles aquí...</p>
+                    <a href="https://www.roblox.com/es" class="more-link">.MAS</a>
+        </div>
+        <div class="card">
+            <img src="2k25.jpg" alt="2k25">
+            <h3>Gran Turismo 7</h3>
+            <p>NBA 2K25 es la entrega más reciente de la popular serie de videojuegos de baloncesto, desarrollada por Visual Concepts y publicada por 2K. Este juego ofrece una experiencia de baloncesto inmersiva y realista, con mejoras en la jugabilidad, gráficos y modos de juego. Los jugadores pueden sumergirse en la acción con tecnología ProPLAY™ que captura movimientos auténticos de la NBA y personalizarlos a través de MyCAREER, MyTEAM, MyNBA y La W. </p>
+           <p>Más detalles aquí...</p>
+                    <a href="https://nba.2k.com/es-MX/2k25/" class="more-link">.MAS</a> 
+        </div>
+    </div>  
+     <div class="products">
+        <div class="card">
+            <img src="MA.jpg" alt="Mario kart 9">
+            <h3>Mario kart 9</h3>
+            <p>Mario Kart 9, ahora llamado Mario Kart World, es la próxima entrega de la famosa serie de carreras de karts de Nintendo, que se espera para Nintendo Switch 2. Se caracteriza por su mundo abierto e interconectado, permitiendo una mayor exploración y rutas alternativas en los circuitos. Además, introduce nuevos vehículos como motos de nieve y lanchas, adaptándose a diversos terrenos.</p>
+                <p>Más detalles aquí...</p>
+                    <a href="https://www.nintendo.com/es-mx/store/products/mario-kart-world-switch-2/?srsltid=AfmBOopOjCDau1c5hcCsLQYP_xMdlV1jknfx-JqjHJfT6Uuta6OqUjKN" class="more-link">.MAS</a> 
+        </div>
+        <div class="card">
+            <img src="fc24.jpg" alt="fc24">
+            <h3>EA Sports FC 24</h3>
+            <p>EA Sports FC 24 es la primera entrega de la serie EA Sports FC, desarrollada por EA Vancouver y EA Rumanía, y publicada por Electronic Arts. Marca el comienzo de una nueva era para los juegos de fútbol, después de la colaboración entre Electronic Arts y la FIFA. El juego ofrece una experiencia futbolística realista, con nuevas tecnologías como HyperMotionV, Estilos de juego optimizados por Opta, y un motor Frostbite mejorado. </p>
+             <p>Más detalles aquí...</p>
+                    <a href="https://www.ea.com/es-es/games/ea-sports-fc/news/fc-24-gameplay-deepdive" class="more-link">.MAS</a> 
+        </div>
+        <div class="card">
+            <img src="https://www.nintendo.com/es-mx/store/products/crash-bandicoot-4-its-about-time-switch/?srsltid=AfmBOoryPs4BNaiGMNAjLN3aEwi1nj4aJGyraimvYOcQgi8GXlm3KEik" alt="Crash Bandicoot 4: It's About Time">
+            <h3>Crash Bandicoot 4: It's About Time</h3>
+            <p>Ues un videojuego de plataformas en 3D que continúa la historia después de "Crash Bandicoot 3: Warped". Neo Cortex y N. Tropy regresan y buscan conquistar el multiverso, obligando a Crash y Coco a viajar por el tiempo y el espacio para detenerlos. Deberán reunir las cuatro máscaras cuánticas y alterar las leyes de la realidad para restaurar el orden..</p>
+            <button class="more-btn">.MAS</button>
+        </div>
+        <div class="card">
+            <img src="need" alt="need">
+            <h3>Need for Speed Payback</h3>
+            <p>Para pilotos competitivos o casuales, con gran variedad de modos de juego, campañas y coleccionables.</p>
+            <a href="https://www.playstation.com/es-mx/games/need-for-speed-payback/" class="more-link">.MAS</a> 
+        </div>
+    </div>
+</body>
+</html>

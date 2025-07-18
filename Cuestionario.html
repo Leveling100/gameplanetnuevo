@@ -1,0 +1,146 @@
+    <title>Formulario Rápido de Interés - Game Planet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(90deg in oklab, blue, red);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 550px; 
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #004e92;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+            font-size: 1.1em; 
+        }
+        .form-group .options-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 5px;
+        }
+        .form-group .options-list li {
+            margin-bottom: 10px;
+        }
+        .form-group .options-list input[type="radio"] {
+            margin-right: 10px;
+            transform: scale(1.1); 
+        }
+        .form-group .options-list label span {
+            font-weight: normal;
+            color: #333;
+        }
+        .submit-btn {
+            background-color: #004e92;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #003366;
+            transform: translateY(-2px);
+        }
+        .form-group textarea{
+            resize: vertical;
+            min-height: 120px;
+            width: 100%;
+            height: 100PX;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Dinos tus preferencias en Game Planet</h2>
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label>1. ¿Qué tipo de videojuego prefieres jugar?</label>
+                <ul class="options-list">
+                    <li><label><input type="radio" name="tipo_juego" value="accion_aventura" required> <span>Acción y Aventura</span></label></li>
+                    <li><label><input type="radio" name="tipo_juego" value="rpg"> <span>Juegos de Rol (RPG)</span></label></li>
+                    <li><label><input type="radio" name="tipo_juego" value="deportes_carreras"> <span>Deportes y Carreras</span></label></li>
+                    <li><label><input type="radio" name="tipo_juego" value="estrategia_simulacion"> <span>Estrategia y Simulación</span></label></li>
+                    <li><label><input type="radio" name="tipo_juego" value="casual_familiar"> <span>Casual y Familiar</span></label></li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <label>2. ¿Cuál es tu consola o plataforma favorita?</label>
+                <ul class="options-list">
+                    <li><label><input type="radio" name="plataforma" value="playstation" required> <span>PlayStation (PS5/PS4)</span></label></li>
+                    <li><label><input type="radio" name="plataforma" value="xbox"> <span>Xbox (Series X|S/One)</span></label></li>
+                    <li><label><input type="radio" name="plataforma" value="nintendo_switch"> <span>Nintendo Switch</span></label></li>
+                    <li><label><input type="radio" name="plataforma" value="pc_gamer"> <span>PC Gamer</span></label></li>
+                    <li><label><input type="radio" name="plataforma" value="varias"> <span>Varias/Todas</span></label></li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <label>3. ¿Con qué frecuencia compras videojuegos o accesorios?</label>
+                <ul class="options-list">
+                    <li><label><input type="radio" name="frecuencia_compra" value="mensual" required> <span>Mensual o más</span></label></li>
+                    <li><label><input type="radio" name="frecuencia_compra" value="trimestral"> <span>Cada 3 meses</span></label></li>
+                    <li><label><input type="radio" name="frecuencia_compra" value="semestral"> <span>Cada 6 meses</span></label></li>
+                    <li><label><input type="radio" name="frecuencia_compra" value="anual"> <span>Anual o menos</span></label></li>
+                    <li><label><input type="radio" name="frecuencia_compra" value="ocasional"> <span>Ocasionalmente</span></label></li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <label>4.¿Cuales de estos paquetes te gustaria que trajéramos?  </label>
+                <ul class="options-list">
+                    <li><label><input type="radio" name="motivacion_compra" value="novedad" required> <span>Paquete plus para Play Station</span></label></li>
+                    <li><label><input type="radio" name="motivacion_compra" value="oferta"> <span>Gold para Xbox</span></label></li>
+                    <li><label><input type="radio" name="motivacion_compra" value="recomendacion"> <span>Nintendo Switch Online</span></label></li>
+                    <li><label><input type="radio" name="motivacion_compra" value="franquicia"> <span>GamePass de Xbox</span></label></li>
+                    <li><label><input type="radio" name="motivacion_compra" value="contenido"> <span>All game pack</span></label></li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <label>5. ¿Cuál es el jeuego que juegas más y cuantas horas le dedicas?</label>
+                <textarea id="comentario" name="comentario"  placeholder="Escribe aquí"></textarea>
+                </ul>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar Preferencias</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
